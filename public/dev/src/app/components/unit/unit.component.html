@@ -29,21 +29,21 @@
                             <div class="col-md-2">
 
                               <!-- Select Element -->
-                              <!--<label>Khoảng</label>-->
-                              <!--<select [(ngModel)]="filtering.range"-->
-                                      <!--name="range" class="form-control m-b">-->
-                                <!--<option *ngFor="let rd of range_date" [value]="rd.value">{{rd.name}}</option>-->
-                              <!--</select>-->
+                              <label>Khoảng</label>
+                              <select [(ngModel)]="filtering.range"
+                                      name="range" class="form-control m-b">
+                                <option *ngFor="let rd of range_date" [value]="rd.value">{{rd.name}}</option>
+                              </select>
 
                               <!-- Radio Element -->
-                              <div class="radio" *ngFor="let rd of range_date">
-                                <label class="i-checks">
-                                  <input type="radio" name="range_date" [value]="rd.value"
-                                         (change)="filtering.range = rd.value">
-                                  <i></i>
-                                  {{rd.name}}
-                                </label>
-                              </div>
+                              <!--<div class="radio" *ngFor="let rd of range_date">-->
+                                <!--<label class="i-checks">-->
+                                  <!--<input type="radio" name="range_date" [value]="rd.value"-->
+                                         <!--(change)="filtering.range = rd.value">-->
+                                  <!--<i></i>-->
+                                  <!--{{rd.name}}-->
+                                <!--</label>-->
+                              <!--</div>-->
 
                             </div>
                             <div class="col-md-10">
